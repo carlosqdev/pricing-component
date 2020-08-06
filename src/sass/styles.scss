@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import './header.scss';
+
+:root {
+  
+  --bgpage: #f7f7ff;
+  --LightGrayishBlue: #d0d0db;
+  --GrayishBlue: #8b8ba2;
+  --DarkGrayishBlue: hsl(232, 13%, 33%);
+  --switch1: hsl(236, 72%, 79%);
+  --switch2: hsl(237, 63%, 64%);
+  --switchSpinner: #fdfefb;
+  
+}
+body {
+  background-color: var(--bgpage);
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.hidden {
+  display: none;
+}

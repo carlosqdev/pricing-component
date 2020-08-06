@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <link rel="icon" type="image/png" sizes="32x32" href="./static/img/favicon-32x32.png">
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-</head>
-<body>
-
-  Our Pricing
-  Annually
-  Monthly
-
-  Basic
-  &dollar;19.99
-  &dollar;199.99
-  500 GB Storage
-  2 Users Allowed
-  Send up to 3 GB
-  Learn More
-
-  Professional
-  &dollar;24.99
-  &dollar;249.99
-  1 TB Storage
-  5 Users Allowed
-  Send up to 10 GB
-  Learn More
-
-  Master
-  &dollar;39.99
-  &dollar;399.99
-  2 TB Storage
-  10 Users Allowed
-  Send up to 20 GB
-  Learn More
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./static/img/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./static/css/styles.css" />
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+  </head>
+  <body>
+    <main>
+      <!-- Open Header -->
+      <section class="header">
+        <div class="wrapper">
+          <h1 class="title_h1">Our Pricing</h1>
+          <div class="conten_plans">
+            <p class="copy_switch">Annually</p>
+            <button class="switch" id="switch"></button>
+            <p class="copy_switch">Monthly</p>
+          </div>
+        </div>
+      </section>
+      <!-- End Header -->
+      <section class="cards">
+        <!-- Card Basic -->
+        <div class="card">
+          <h2 class="title_card">Basic</h2>
+          <div class="card_body">
+            <span class="price">&dollar;199.99</span>
+            <span class="storage">500 GB Storage</span>
+            <span class="users">2 Users Allowed</span>
+            <span class="send">Send up to 3 GB</span>
+            <button class="button">Learn More</button>
+          </div>
+        </div>
+        <!-- End Card Basic -->
+      </section>
+      <!-- Open card -->
+    </main>
+    <section class="hidden">
+      <!-- basic -->
+      &dollar;19.99 Professional &dollar;24.99 &dollar;249.99 1 TB Storage 5
+      Users Allowed Send up to 10 GB Learn More Master &dollar;39.99
+      &dollar;399.99 2 TB Storage 10 Users Allowed Send up to 20 GB Learn More
+    </section>
+  </body>
 </html>
