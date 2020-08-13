@@ -1,0 +1,49 @@
+.cards {
+  margin: 4rem 0 0 0;
+  .card {
+    border-radius: 10px;
+    margin: 0 0.5rem 0 0.5rem;
+    text-align: center;
+    color: var(--TextCard);
+    background-color: var(--white);
+    .title_card {
+      margin: 1rem 0 0 0;
+      padding: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .card_body {
+      display: flex;
+      flex-direction: column;
+      .cost {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .symbol {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 35px;
+          margin: 1.5rem 0.3rem 1.5rem 0;
+        }
+        .price {
+          margin: 1.5rem 0 1.5rem 0;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 60px;
+        }
+      }
+      .span {
+        margin: 1rem 1rem 1rem 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+      }
+      .top_line {
+        border-top: 2px solid var(--line);
+      }
+      .bottom_line {
+        border-bottom: 2px solid var(--line);
+      }
+    }
+  }
+}
