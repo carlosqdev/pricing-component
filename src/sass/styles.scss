@@ -13,14 +13,12 @@
   --switch2: hsl(237, 63%, 64%);
   --switchSpinner: #fdfefb;
   --line: #f2f2f4;
-  
 }
 body {
-  // background-color: var(--bgpage);
-  background-color: blue;
-  font-size: 15px;
   margin: 0;
   padding: 0;
+  background-color: var(--bgpage);
+  font-size: 15px;
 }
 .hidden {
   display: none;

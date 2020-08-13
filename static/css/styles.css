@@ -55,11 +55,14 @@
   margin: 4rem 0 0 0;
 }
 .cards .card {
+  width: 285;
   border-radius: 10px;
-  margin: 0 0.5rem 0 0.5rem;
+  border: none;
+  margin: 0 0.5rem 2rem 0.5rem;
+  padding: 1.5rem 0 1.5rem 0;
   text-align: center;
-  color: var(--TextCard);
   background-color: var(--white);
+  color: var(--TextCard);
 }
 .cards .card .title_card {
   margin: 1rem 0 0 0;
@@ -90,15 +93,33 @@
   font-size: 60px;
 }
 .cards .card .card_body .span {
-  margin: 1rem 1rem 1rem 1rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
+  font-size: 1rem;
 }
-.cards .card .card_body .top_line {
-  border-top: 2px solid var(--line);
+.cards .card .card_body .line {
+  padding: 1rem;
+  margin: -1px 1rem 0 1rem;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
-.cards .card .card_body .bottom_line {
-  border-bottom: 2px solid var(--line);
+.cards .card .card_body .button {
+  margin: 2rem 1rem 0 1rem;
+  padding: 1rem 0 1rem 0;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(var(--switch1), var(--switch2));
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  outline: none;
+}
+.cards .card:hover {
+  transition: 1s ease all;
+  background: linear-gradient(var(--switch1), var(--switch2));
+  color: var(--white);
 }
 
 :root {
@@ -114,10 +135,10 @@
 }
 
 body {
-  background-color: blue;
-  font-size: 15px;
   margin: 0;
   padding: 0;
+  background-color: var(--bgpage);
+  font-size: 15px;
 }
 
 .hidden {
