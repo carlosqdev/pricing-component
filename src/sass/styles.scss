@@ -18,6 +18,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bgpage);
+  background-image: url(../img/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position-y: -45px;
+  background-position-x: 138px;
   font-size: 15px;
 }
 .hidden {
