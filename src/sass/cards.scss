@@ -1,70 +1,87 @@
 .cards {
   margin: 4rem 0 0 0;
   padding: 0 0 2rem 0;
-  .card {
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
-    border-radius: 8px;
-    margin: 0 0.5rem 2rem 0.5rem;
-    padding: 1.5rem 0 1.5rem 0;
-    text-align: center;
-    background-color: var(--white);
-    color: var(--TextCard);
-    .title_card {
-      margin: 1rem 0 0 0;
-      padding: 0;
-      font-family: "Montserrat", sans-serif;
-      font-weight: 700;
-      font-size: 1rem;
-    }
-    .card_body {
-      display: flex;
-      flex-direction: column;
-      .cost {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .symbol {
-          font-family: "Montserrat", sans-serif;
-          font-weight: 700;
-          font-size: 35px;
-          margin: 1.5rem 0.3rem 1.5rem 0;
-        }
-        .price {
-          margin: 1.5rem 0 1.5rem 0;
-          font-family: "Montserrat", sans-serif;
-          font-weight: 700;
-          font-size: 60px;
-        }
-      }
-      .span {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card {
+      max-width: 320px;
+      width: 285px;
+      box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      margin: 0 1rem 2rem 1rem;
+      padding: 1.5rem 0 1.5rem 0;
+      text-align: center;
+      background-color: var(--white);
+      color: var(--TextCard);
+      .title_card {
+        margin: 1rem 2rem 0 2rem;
+        padding: 0;
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 1rem;
       }
-      .line {
-        padding: 1rem;
-        margin: -1px 1rem 0 1rem;
-        border-top: 1px solid var(--line);
-        border-bottom: 1px solid var(--line);
-      }
-      .button {
-        margin: 2rem 1rem 0 1rem;
-        padding: 1rem 0 1rem 0;
-        border-radius: 8px;
-        border: none;
-        background: linear-gradient(var(--switch1), var(--switch2));
-        color: var(--white);
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 15px;
-        text-transform: uppercase;
-        outline: none;
+      .card_body {
+        display: flex;
+        flex-direction: column;
+        .cost {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 2rem 0 2rem;
+          .symbol {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            margin: 1.5rem 0.3rem 1.5rem 0;
+          }
+          .price {
+            margin: 1.5rem 0 1.5rem 0;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+          }
+        }
+        .span {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 1rem;
+        }
+        .line {
+          padding: 1rem;
+          margin: -1px 2rem 0 2rem;
+          border-top: 1px solid var(--line);
+          border-bottom: 1px solid var(--line);
+        }
+        .button {
+          margin: 2rem 2rem 0 2rem;
+          padding: 1rem 0 1rem 0;
+          border-radius: 8px;
+          border: none;
+          background: linear-gradient(var(--switch1), var(--switch2));
+          color: var(--white);
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          text-transform: uppercase;
+          outline: none;
+        }
       }
     }
+    .card:hover {
+      transition: 1s ease all;
+      background: linear-gradient(var(--switch1), var(--switch2));
+      color: var(--white);
+    }
   }
-  .card:hover {
-    transition: 1s ease all;
-    background: linear-gradient(var(--switch1), var(--switch2));
-    color: var(--white);
+}
+@media screen and (min-width:375px) {
+  .cards {
+    .wrapper {
+      .card {
+        width: 320px;
+      }
+    }
   }
 }

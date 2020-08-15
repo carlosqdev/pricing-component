@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
-@import './header.scss';
-@import './cards.scss';
+@import "./header.scss";
+@import "./cards.scss";
 
 :root {
   --TextCard: #4c506b;
@@ -17,12 +17,18 @@
 body {
   margin: 0;
   padding: 0;
+  font-size: 15px;
   background-color: var(--bgpage);
   background-image: url(../img/bg-top.svg);
   background-repeat: no-repeat;
   background-position-y: -45px;
-  background-position-x: 138px;
-  font-size: 15px;
+  background-position-x: 130px;
+}
+@media screen and (min-width: 375px) {
+  body {
+    background-position-y: -50px;
+    background-position-x: 180px;
+  }
 }
 .hidden {
   display: none;
