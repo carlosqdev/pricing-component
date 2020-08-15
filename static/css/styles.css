@@ -135,6 +135,12 @@
     width: 320px;
   }
 }
+@media screen and (min-width: 425px) {
+  .cards .wrapper .card {
+    max-width: 370px;
+    width: 370px;
+  }
+}
 :root {
   --TextCard: #4c506b;
   --white: #ffffff;
@@ -162,6 +168,11 @@ body {
   body {
     background-position-y: -50px;
     background-position-x: 180px;
+  }
+}
+@media screen and (min-width: 425px) {
+  body {
+    background-position-x: 230px;
   }
 }
 .hidden {

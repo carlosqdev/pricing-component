@@ -30,6 +30,11 @@ body {
     background-position-x: 180px;
   }
 }
+@media screen and (min-width: 425px) {
+  body {
+    background-position-x: 230px;
+  }
+}
 .hidden {
   display: none;
 }
