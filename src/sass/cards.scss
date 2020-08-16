@@ -73,6 +73,12 @@
       transition: 1s ease all;
       background: linear-gradient(var(--switch1), var(--switch2));
       color: var(--white);
+      .card_body {
+        .button {
+          transition: 1s ease all;
+          border: 1px solid var(--line);
+        }
+      }
     }
   }
 }
@@ -108,6 +114,17 @@
       .card {
         max-width: 320px;
         width: 300px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cards {
+    margin-top: 2.5rem;
+    .wrapper {
+      width: auto;
+      .card {
+        margin-bottom: 1rem;
       }
     }
   }
