@@ -141,6 +141,23 @@
     width: 370px;
   }
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    background-image: url(../img/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+  }
+  .cards .wrapper {
+    width: 765px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .cards .wrapper .card {
+    max-width: 320px;
+    width: 300px;
+  }
+}
 :root {
   --TextCard: #4c506b;
   --white: #ffffff;
@@ -173,6 +190,12 @@ body {
 @media screen and (min-width: 425px) {
   body {
     background-position-x: 230px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-position-x: right;
+    background-position-y: 0;
   }
 }
 .hidden {

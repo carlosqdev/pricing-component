@@ -35,6 +35,12 @@ body {
     background-position-x: 230px;
   }
 }
+@media screen and (min-width:768px) {
+  body {
+    background-position-x: right;
+    background-position-y: 0;
+  }
+}
 .hidden {
   display: none;
 }

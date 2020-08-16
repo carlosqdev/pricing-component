@@ -95,3 +95,20 @@
     }
   }
 }
+@media screen and (min-width: 768px) {
+  .cards {
+    background-image: url(../img/bg-bottom.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    .wrapper {
+      width: 765px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .card {
+        max-width: 320px;
+        width: 300px;
+      }
+    }
+  }
+}
